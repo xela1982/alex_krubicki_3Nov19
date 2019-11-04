@@ -1,6 +1,6 @@
 # alex_krubicki_3Nov19
 
-Besic implimination of layers separation by separation of concern.
+Basic implementation of layers separation by separation of concern.
 
 1) Run script that was attached to my eamil to create and seed DB ( update connection string ) 
 2) Call api/TakeAway/GetCompanies to GET all companies 
