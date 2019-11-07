@@ -1,15 +1,12 @@
-﻿using alex_krubicki_3Nov19.Data.ADO;
-
+﻿
 using alex_krubicki_3Nov19.Interfaces;
-using alex_krubicki_3Nov19.Model;
-using alex_krubicki_3Nov19.Repositories;
 using alex_krubicki_3Nov19.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-
+using alex_krubicki_3Nov19.Repositories.Services;
 
 namespace alex_krubicki_3Nov19
 {
@@ -26,10 +23,12 @@ namespace alex_krubicki_3Nov19
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddScoped<IRepository, RepositoryService>();
+           
             services.AddScoped<ITakeAway, TakeAwayService>();
-            services.Configure<ConnectionStringConfig>(this.Configuration.GetSection("ConnectionStrings"));
-          
+            services.AddScoped<IRepositories, ADORepository>();
+            services.AddSingleton(Configuration);
+       
+        
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

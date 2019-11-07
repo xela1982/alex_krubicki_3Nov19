@@ -1,17 +1,19 @@
-﻿using alex_krubicki_3Nov19.Entities;
-using alex_krubicki_3Nov19.Interfaces;
-using alex_krubicki_3Nov19.Repositories;
-using alex_krubicki_3Nov19.Repositories.Entities;
+﻿
+
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using alex_krubicki_3Nov19.Repositories.Services;
+using alex_krubicki_3Nov19.Interfaces;
+using alex_krubicki_3Nov19.Model;
+using alex_krubicki_3Nov19.Repositories.Entities;
 
 namespace alex_krubicki_3Nov19.Services
 {
     public class TakeAwayService : ITakeAway
     {
-        private readonly IRepository _repositoryService;
-        public TakeAwayService(IRepository repositoryService)
+        private readonly IRepositories _repositoryService;
+        public TakeAwayService(IRepositories repositoryService)
         {
             _repositoryService = repositoryService;
         }
@@ -20,8 +22,8 @@ namespace alex_krubicki_3Nov19.Services
 
             try
             {
-                var getCompanies = await _repositoryService.GetCompanies();
-                return (true, getCompanies);
+                var output = await _repositoryService.GetCompanies();
+                return (true, output);
             }
             catch (Exception ex)
             {
@@ -34,8 +36,8 @@ namespace alex_krubicki_3Nov19.Services
         {
             try
             {
-                var getReportByParam = await _repositoryService.GetReportByParam(companyId, startDate, endDate);
-                return (true, getReportByParam);
+                var output = await _repositoryService.GetReportByParam(companyId, startDate, endDate);
+                return (true, output);
             }
             catch (Exception ex)
             {

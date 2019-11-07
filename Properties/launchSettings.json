@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/TakeAway/GetCompanies",
+      "launchUrl": "api/takeaway/getcompanies",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
