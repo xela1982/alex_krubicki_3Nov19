@@ -10,7 +10,7 @@ namespace alex_krubicki_3Nov19.Controllers
 {
     
     [ApiController]
-    public class TakeAwayController : ControllerBase
+    public class TakeAwayController : ControllerBase 
     {
 
         private readonly ITakeAway _takeAwayService;
