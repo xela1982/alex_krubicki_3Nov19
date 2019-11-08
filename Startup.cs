@@ -28,7 +28,7 @@ namespace alex_krubicki_3Nov19
         {
        
             services.AddScoped<ITakeAway, TakeAwayService>();
-            services.AddScoped<IRepositories, ADORepository>();
+            services.AddScoped<IRepositories, EFRepositoryService>();
             services.AddSingleton(Configuration);
             services.AddDbContext<TakeAway2Context>(options =>
             {
