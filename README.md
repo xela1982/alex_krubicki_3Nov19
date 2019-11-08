@@ -9,7 +9,10 @@ Basic implementation of layers separation by separation of concern.
 5) Implemented Repository to allow switch between ADO and EF 
 6) Script file was added for creating and seeding DB. 
 
-Created a DB and App application in Azure, the supported URL is http://alexkrubicki3nov19.azurewebsites.net/
+Created a DB and App application in Azure, the supported URLs are
+http://alexkrubicki3nov19.azurewebsites.net/
+http://alexkrubicki3nov19.azurewebsites.net/GetReportByParam?companyid=1&startdate=2010-10-1&enddate=2010-10-29
+
 
 
 I  run this soltuion on Microsoft Visual Studio Community 2017 
