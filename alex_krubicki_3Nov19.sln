@@ -7,6 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories", "..\Reposito
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "alex_krubicki_3Nov19", "alex_krubicki_3Nov19.csproj", "{E294D1E1-49A8-412E-9128-41E1878B94EF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ScriptDb", "ScriptDb", "{8D2686CF-9119-401D-83FE-113B1E6464FE}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\Desktop\script.sql = ..\..\..\Desktop\script.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
