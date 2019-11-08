@@ -7,6 +7,7 @@ using alex_krubicki_3Nov19.Repositories.Services;
 using alex_krubicki_3Nov19.Interfaces;
 using alex_krubicki_3Nov19.Model;
 using alex_krubicki_3Nov19.Repositories.Entities;
+using Repositories.Models;
 
 namespace alex_krubicki_3Nov19.Services
 {

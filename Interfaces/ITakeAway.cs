@@ -1,5 +1,6 @@
 ﻿
 using alex_krubicki_3Nov19.Repositories.Entities;
+using Repositories.Models;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
